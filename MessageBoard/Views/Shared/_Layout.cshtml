@@ -1,0 +1,215 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-ng-app="@ViewBag.InitModule">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <!-- Change title, description and keywords -->
+  <title>@ViewBag.Title - MessageBoard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- HTML5 Support for IE -->
+  <!--[if lt IE 9]>
+  <script src="~/scripts/html5shim.js"></script>
+  <![endif]-->
+
+  <!-- Google Web Font -->
+  <link href='http://fonts.googleapis.com/css?family=Dosis:200,400,600' rel='stylesheet' type='text/css'>
+
+  <!-- Stylesheets -->
+  <link href="~/Content/Template/style/bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" href="~/Content/Template/style/font-awesome.css">
+  <!--[if IE 7]>
+  <link rel="stylesheet" href="~/Content/Template/style/font-awesome-ie7.css">
+  <![endif]-->
+
+  <link href="~/Content/Template/style/ddlevelsmenu-base.css" rel="stylesheet">
+  <link href="~/Content/Template/style/ddlevelsmenu-topbar.css" rel="stylesheet">
+  <link href="~/Content/Template/style/style.css" rel="stylesheet">
+  <!-- Change the template color below. Supported colors blue,red and green. -->
+  <link href="~/Content/Template/style/blue.css" rel="stylesheet">
+  <link href="~/Content/Template/style/bootstrap-responsive.css" rel="stylesheet">
+  <link href="~/Content/Template/style/flexslider.css" rel="stylesheet">
+  <link href="~/Content/Template/style/prettyPhoto.css" rel="stylesheet">
+  
+  <!-- Our Custom Styles -->
+  <link href="~/Content/Site.css" rel="stylesheet" />
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="~/Content/Template/img/favicon/favicon.png">
+</head>
+
+<body>
+
+  <!-- Sliding share panel. Click "Share it" to see. -->
+
+  <div class="sharepanel">
+    <div class="container">
+      <div class="row">
+        <div class="span8">
+          <div class="padd spara">
+            <!-- Small para -->
+            <p>Tell your friends about us! :)</p>
+          </div>
+        </div>
+        <div class="span4">
+          <div class="padd">
+            <div class="social">
+              <!-- Social media icons. Repalce # with your profile links -->
+              <a href="https://www.facebook.com/">
+                <img src="~/Content/Template/img/facebook.png" alt="" width="40" /></a>
+              <a href="https://twitter.com/">
+                <img src="~/Content/Template/img/twitter.png" alt="" width="40" /></a>
+              <a href="https://www.linkedin.com/">
+                <img src="~/Content/Template/img/linkedin.png" alt="" width="40" /></a>
+              <a href="https://plus.google.com/collections/featured">
+                <img src="~/Content/Template/img/googleplus.png" alt="" width="40" /></a>
+              <a href="https://www.rss.com/">
+                <img src="~/Content/Template/img/rss.png" alt="" width="40" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+
+  <!-- Header -->
+
+  <div class="fixedbar">
+    <div class="container">
+      <div class="row">
+        <div class="span12">
+          <div class="logo">
+            <div class="pull-left">
+              <!-- Logo with font awesome icon (icon-camera-retro). Replace it with your logo. Replace # with your site link -->
+              <h1><a href="/Home/Index"><i class="icon-camera-retro"></i>MessageBoard</a></h1>
+            </div>
+            <div class="navi">
+              <!-- Navigation Starts Here -->
+              <div class="pull-left">
+                <div id="ddtopmenubar" class="mattblackmenu">
+                  <!-- Main navigation -->
+                  <ul>
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                      <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                      <li>@Html.ActionLink("Portfolio", "Index", "Portfolio")</li>
+                      <li>@Html.ActionLink("Blog", "Index", "Blog")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                      <li>@Html.ActionLink("My Messages", "MyMessages", "Home")</li>
+                      @Html.Partial("_LoginPartial")
+                  </ul>
+                </div>
+              </div>
+              <!-- Navigation Ends Here -->
+            </div>
+          </div>
+          <div class="share">
+            <div class="pull-right">
+              <!-- Share it link for slider -->
+              <p><a href="#" class="open"><span class="hidden-phone">Share it</span> <i class="icon-share"></i></a></p>
+            </div>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main content -->
+
+  <div class="main">
+    <div class="container">
+      <div class="row">
+        <div class="span12 hidden-desktop">
+          <div class="padd">
+            <div class="navis"></div>
+          </div>
+        </div>
+        @RenderBody()
+      </div>
+    </div>
+  </div>
+
+  <!-- Foot -->
+
+  <!-- Three column footer -->
+
+  <div class="foot">
+    <div class="container">
+      <div class="row">
+        <div class="span4">
+          <div class="padd">
+            <!-- Add class "widget" -->
+            <div class="widget">
+              <!-- Title -->
+              <h3>Software University</h3>
+              <!-- Content -->
+              <!-- Below is the blockquote -->
+              <blockquote>
+                <p>СофтУни предлага цялостна програма по софтуерно инженерство с най-търсените софтуерни технологии, както и най-модерните учебни практики. Учебният план на СофтУни е внимателно разработен с прякото участие на компаниите от IT сектора. </p>
+                <!-- Author information -->
+                <small> <a href="https://softuni.bg/">Посети ни!</a> </small>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+        <div class="span4">
+          <div class="padd">
+            <div class="widget">
+              <h3>Software engineering courses</h3>
+              <ul>
+                <li><a href="#">ENTRY MODULE</a></li>
+                <li><a href="#">TECH MODULE</a></li>
+                <li><a href="#">C# DB FUNDAMENTALS</a></li>
+                <li><a href="#">C# WEB</a></li>
+                <li><a href="#">JAVA FUNDAMENTALS</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="span4">
+          <div class="padd">
+            <div class="widget">
+              <h3>Seminars</h3>
+              <ul>
+                <li><a href="#">Introduction to Virtual Reality</a></li>
+                <li><a href="#">Software development in practice: tips and good case practicies</a></li>
+                <li><a href="#">C# New Features</a></li>
+                <li><a href="#">How to install and configure a theme in WordPress</a></li>
+                <li><a href="#">QA Automation - March 2017</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="span12">
+          <!-- Copyright information -->
+          <div class="fpadd">Copyright &copy; 2012 - <a href="#">Your Site</a> / <a href="#">Disclaimer</a> / <a href="#">Privacy Policy</a></div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="~/Scripts/jquery-2.0.2.min.js"></script>
+  <script src="~/Scripts/angular.min.js"></script>
+  <script src="~/scripts/easing.js"></script>
+  <script src="~/scripts/bootstrap.js"></script>
+  <script type="text/javascript" src="~/scripts/ddlevelsmenu.js"></script>
+  <script type="text/javascript" src="~/scripts/flexslider.js"></script>
+  <script type="text/javascript" src="~/scripts/jquery.prettyPhoto.js"></script>
+  <script type="text/javascript" src="~/scripts/custom.js"></script>
+
+  @RenderSection("scripts", required: false)
+</body>
+</html>
