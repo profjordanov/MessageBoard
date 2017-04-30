@@ -33,6 +33,12 @@ namespace MessageBoard
             Mapper.Initialize(expression =>
             {
                 expression.CreateMap<Picture, PictureVM>();
+                expression.CreateMap<PictureBM, Picture>();
+                expression.CreateMap<BlogTopic, BlogTopicVM>();
+                expression.CreateMap<BlogTopicBM, BlogTopic>();
+
+
+
             });
         }
     }

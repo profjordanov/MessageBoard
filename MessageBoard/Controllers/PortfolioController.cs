@@ -24,5 +24,19 @@ namespace MessageBoard.Controllers
             return View(vms);
         }
 
+        [System.Web.Mvc.HttpGet]
+        public ActionResult Add()
+        {
+            return this.View();
+        }
+
+        [System.Web.Mvc.HttpPost]
+        public ActionResult Add([Bind(Include = "ImageThumbnail")] PictureBM bind)
+        {
+                this.service.AddPicture(bind);
+                return this.RedirectToAction("Index");
+
+        }
+
     }
 }

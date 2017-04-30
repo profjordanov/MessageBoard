@@ -16,5 +16,12 @@ namespace MessageBoard.Services
             IEnumerable<PictureVM> vms = Mapper.Instance.Map<IEnumerable<Picture>, IEnumerable<PictureVM>>(pictures);
             return vms;
         }
+
+        public void AddPicture(PictureBM bind)
+        {
+            Picture model = Mapper.Map<PictureBM, Picture>(bind);
+            this.Context.Pictures.Add(model);
+            this.Context.SaveChanges();
+        }
     }
 }
