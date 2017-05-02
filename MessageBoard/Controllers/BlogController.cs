@@ -37,5 +37,11 @@ namespace MessageBoard.Controllers
 
         }
 
+        public ActionResult Details(int id)
+        {
+            BlogTopicVM topicvm = this.service.GetTopic(id);
+            return this.View(topicvm);
+        }
+
     }
 }

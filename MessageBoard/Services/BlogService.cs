@@ -24,5 +24,12 @@ namespace MessageBoard.Services
             this.Context.BlogTopics.Add(model);
             this.Context.SaveChanges();
         }
+
+        public BlogTopicVM GetTopic(int id)
+        {
+            BlogTopic topic = this.Context.BlogTopics.Find(id);
+            BlogTopicVM vm = Mapper.Map<BlogTopic, BlogTopicVM>(topic);
+            return vm;
+        }
     }
 }

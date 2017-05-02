@@ -1,0 +1,83 @@
+﻿@model MessageBoard.Models.BlogTopicVM
+@{
+    ViewBag.Title = "Details";
+}
+
+<div class="posts">
+    <!-- Each entry should be enclosed inside div with the class "entry" -->
+    <div class="entry">
+        <!-- Entry title -->
+        <h2><a href="#">@Model.Title</a></h2>
+        <!-- Entry meta information. Calender, User, Category, Tags. Font awesome icons used -->
+        <p class="meta"><i class="icon-calendar"></i>&nbsp; @Model.Date - <i class="icon-user"></i>&nbsp; Anonimous 
+        <!-- Thumbnail here -->
+        <p class="thumbnail"><img src="@Model.ImageThumbnail" alt="" /></p>
+        <!-- Entry para -->
+        <p>@Model.Description</p>
+    </div>
+    <div class="comments">
+        <div class="comment-list">
+            <h3>5 Comments</h3>
+            <div class="comment-entry">
+                <div class="c-author"><a href="#">Ashok</a></div>
+                <div class="c-meta">Commented on <i class="icon-calendar"></i>26-6-2012</div>
+                <div class="comment">Morbi ac felis nec mauris imperdiet fermentum. Aenean sodales augue ac lacus hendrerit sed rhoncus erat hendrerit. Vivamus vel ultricies elit. Aliquam ut feugiat ante. Curabitur lacinia nulla vel tellus elementum non mollis justo aliquam. Maecenas turpis urna, eleifend et venenatis eget, ultricies quis urna. Aliquam fringilla mauris lectus, in laoreet justo. Aliquam ut pharetra erat.</div>
+            </div>
+            <div class="comment-entry c-reply">
+                <div class="c-author"><a href="#">Ashok</a></div>
+                <div class="c-meta">Commented on <i class="icon-calendar"></i>26-6-2012</div>
+                <div class="comment">Morbi ac felis nec mauris imperdiet fermentum. Aenean sodales augue ac lacus hendrerit sed rhoncus erat hendrerit. Vivamus vel ultricies elit. Aliquam ut feugiat ante. Curabitur lacinia nulla vel tellus elementum non mollis justo aliquam. Maecenas turpis urna, eleifend et venenatis eget, ultricies quis urna. Aliquam fringilla mauris lectus, in laoreet justo. Aliquam ut pharetra erat.</div>
+            </div>
+            <div class="comment-entry">
+                <div class="c-author"><a href="#">Ashok</a></div>
+                <div class="c-meta">Commented on <i class="icon-calendar"></i>26-6-2012</div>
+                <div class="comment">Morbi ac felis nec mauris imperdiet fermentum. Aenean sodales augue ac lacus hendrerit sed rhoncus erat hendrerit. Vivamus vel ultricies elit. Aliquam ut feugiat ante. Curabitur lacinia nulla vel tellus elementum non mollis justo aliquam. Maecenas turpis urna, eleifend et venenatis eget, ultricies quis urna. Aliquam fringilla mauris lectus, in laoreet justo. Aliquam ut pharetra erat.</div>
+            </div>
+        </div>
+        <div class="make-comment">
+            <h3>Leave a Reply</h3>
+            <div class="c-form">
+                <form class="form-horizontal">
+                    <fieldset>
+                        <div class="control-group">
+                            <label class="control-label" for="name">Name</label>
+                            <div class="controls">
+                                <input type="text" class="input-medium" id="name">
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label" for="email">Email</label>
+                            <div class="controls">
+                                <input type="text" class="input-medium" id="email">
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label" for="website">Website</label>
+                            <div class="controls">
+                                <input type="text" class="input-medium" id="website">
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label" for="comment">Comment</label>
+                            <div class="controls">
+                                <textarea class="input-large" id="comment" rows="5"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" class="btn">Make Comment</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Navigation links -->
+    <ul class="pager">
+        <li class="previous">
+            <a href="#">&larr; Previous Post</a>
+        </li>
+        <li class="next">
+            <a href="#">New Post &rarr;</a>
+        </li>
+    </ul>
+</div>
