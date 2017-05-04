@@ -9,5 +9,7 @@ namespace MessageBoard.Models
     {
         public int Id { get; set; }
         public string ImageThumbnail { get; set; }
+        public byte[] UpdatedPicture { get; set; }
+
     }
 }

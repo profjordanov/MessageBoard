@@ -8,5 +8,8 @@ namespace MessageBoard.Models
     public class PictureBM
     {
         public string ImageThumbnail { get; set; }
+
+        public byte[] UpdatedPicture { get; set; }
+
     }
 }
