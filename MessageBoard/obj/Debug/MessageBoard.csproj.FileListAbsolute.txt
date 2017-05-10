@@ -303,4 +303,3 @@ C:\Users\Jordan\Documents\GitHub\MessageBoard\MessageBoard\bin\zh-Hans\System.Sp
 C:\Users\Jordan\Documents\GitHub\MessageBoard\MessageBoard\bin\zh-Hant\System.Spatial.resources.dll
 C:\Users\Jordan\Documents\GitHub\MessageBoard\MessageBoard\obj\Debug\MessageBoard.dll
 C:\Users\Jordan\Documents\GitHub\MessageBoard\MessageBoard\obj\Debug\MessageBoard.pdb
-C:\Users\Jordan\Documents\GitHub\MessageBoard\MessageBoard\obj\Debug\MessageBoard.csprojResolveAssemblyReference.cache
