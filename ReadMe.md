@@ -15,7 +15,7 @@ o	Used inheritance, abstraction and polymorphism properly.
 
 o	Followed the principles of strong cohesion and loose coupling.
 
-o	Correctly formated and structured code, name your identifiers and make the code readable.
+o	Correctly formated and structured code
 
 •	Well looking user interface (UI).
 
@@ -25,7 +25,7 @@ o	Correctly formated and structured code, name your identifiers and make the cod
 
 •	Use caching where appropriate.
 
-•	Written unit tests for your logic, controllers, actions, helpers, etc.
+•	Written unit tests for logic, controllers, actions, helpers, etc.
 
 •	Implemented error handling and data validation to avoid crashes when invalid data
 
