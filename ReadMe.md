@@ -1,5 +1,5 @@
 # Message Board
-Used technologies: Bootstrap, AngularJS, ASP.NET, Entity framework and Azure
+Used technologies: Bootstrap, AngularJS, ASP.NET MVC, Entity Framework and Azure
 
 •	Used Ninject
 
