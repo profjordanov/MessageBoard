@@ -30,4 +30,3 @@ o	Correctly formated and structured code
 •	Implemented error handling and data validation to avoid crashes when invalid data
 
 •	Prevented from security vulnerabilities like SQL Injection, XSS, CSRF, parameter tampering, etc.
-
